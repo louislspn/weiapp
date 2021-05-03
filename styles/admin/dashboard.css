@@ -1,0 +1,129 @@
+.topMenu{
+  background-color:var(--darkBlue);
+  color:var(--light);
+  display:flex;
+  height:50px;
+  padding-top:20pt;
+}
+.topMenu *{
+  flex:1;
+  text-align:center;
+  margin-top:5px;
+}
+.topMenu i{
+  font-size:35px;
+  margin-top:8px;
+}
+.topMenu i:hover{
+  cursor:pointer;
+}
+.teamLabel{
+  background-color:var(--contrast);
+  border-radius:20px;
+  color:white;
+  font-weight:700;
+  font-size:20px;
+  margin-left:5%;
+  margin-top:10px;
+  padding:5px 30px;
+  width:calc(90% - 60px);
+}
+.teamLabel:hover{
+  cursor:pointer;
+}
+.teamLabel i{
+  float:right;
+  margin-top:3px;
+}
+.lineAfter{
+  font-size:1.2em;
+  margin:2%;
+  overflow:hidden;
+}
+.lineAfter:after{
+  content:"";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 2px dashed lightgrey;
+}
+.touchInfo{
+  background-color:var(--light);
+  font-size:20px;
+  padding:20px 0;
+  position:relative;
+  text-align:center;
+}
+.touchInfo:hover{
+  cursor:pointer;
+}
+.touchInfo textarea{
+  font-family:var(--font);
+  font-size:20px;
+  height:300px;
+  width:90%;
+}
+.touchHelp{
+  color:var(--lightblue);
+  font-size:13px;
+  font-weight:700;
+  position:absolute;
+  right:10px;
+  bottom:-20px;
+}
+.confirmBox{
+  background-color:var(--lightgreen);
+  border-radius:13px;
+  display:none;
+  color:white;
+  font-weight:700;
+  top:50vh;
+  left:50vw;
+  padding:30px;
+  position:fixed;
+  text-align:center;
+  transform:translateX(-50%) translateY(-50%) scale(0);
+  transition:all 0.3s;
+  z-index:3;
+}
+.inlineContainer{
+  display:flex;
+}
+.instantModify{
+  background-color:var(--light);
+  border-radius:13px;
+  font-size:20px;
+  flex:1;
+  padding:20px 0;
+  text-align:center;
+  margin:0 2%;
+  position:relative;
+  width:45%;
+}
+.desc{
+  padding:20px;
+}
+.logoContainer{
+  background-color:var(--light);
+  text-align:center;
+  padding:20px 0;
+  position:relative;
+}
+.logo{
+  background-color:white;
+  height:300px;
+  margin-left:calc(50% - 150px);
+  width:300px;
+}
+.inputFile input{
+  display:none;
+}
+.inputFile button{
+  margin-top:10px;
+}
+.content{
+  padding-top:100px;
+}

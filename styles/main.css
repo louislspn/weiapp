@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+:root{
+  --font:'Montserrat';
+  --darkBlue:#30383E;
+  --light:#ECECEC;
+  --contrast:#FDB44B;
+  --lightgreen:#6BC36D;
+  --lightblue:#29607A;
+}
+*{
+  margin:0;
+  padding:0;
+  -webkit-tap-highlight-color:rgba(255, 255, 255, 0);
+}
+body{
+  font-family:var(--font);
+}
+header{
+  box-shadow:0 0 10px grey;
+  position:fixed;
+  width:100%;
+  z-index:3;
+}
+.unselectable{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+input{
+  font-family:var(--font);
+  height:24px;
+  text-align:center;
+}
+input[type='text']{
+  font-size:20px;
+}
+input[type='date']{
+  font-size:15px;
+}
+.inline{
+  display:inline-block;
+}
+button{
+  background-color:var(--contrast);
+  border:none;
+  border-radius:15px;
+  color:white;
+  font-size:15px;
+  font-weight:800;
+  font-family:var(--font);
+  padding:10px 30px 10px 30px;
+  transition:all 0.3s;
+}
+button:hover{
+  cursor:pointer;
+}
+.noBorder{
+  border:none !important;
+}
+.challengeBox{
+  background-color:var(--light);
+  margin-top:5px;
+  margin-left:calc(5% + 10px);
+  padding:10px;
+  width:calc(90% - 40px);
+}
+.challengeBox:hover{
+  cursor:pointer;
+}
+.challengeBox p{
+  margin-top:10px;
+}
+.challengePoint{
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius:30px;
+  font-weight:700;
+  margin-left:calc(100% - 60px);
+  padding:3px 10px;
+  text-align:center;
+  width:40px;
+}
+.challengeDone{
+  background-color:var(--lightgreen);
+  color:white;
+}
+.flex{
+  display:flex;
+}
+.flex-1{
+  flex:1;
+  text-align:center;
+}
+.last{
+  border:none !important;
+}

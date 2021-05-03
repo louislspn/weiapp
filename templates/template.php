@@ -1,0 +1,9 @@
+<?php
+  include(INCLUDES."/head.php");
+?>
+<body>
+  <?php
+    include(VIEWS.$view.".php");
+    include(INCLUDES."/scripts.php");
+  ?>
+</body>
