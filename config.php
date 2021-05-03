@@ -1,4 +1,5 @@
 <?php
+  // debug
   error_reporting(E_ALL & ~E_NOTICE);
   // define constant to connect db
   define("HOST", "localhost");
